@@ -1,4 +1,4 @@
-# VA-Datatape for DCS A-10 Warthog and Tank Killer II
+# VA-Datatape for DCS A-10 Warthog 
 Voice Attack Datatape for the DCS A-10
 
 ## Installation
@@ -24,16 +24,19 @@ All you need to do to use it is:
   * Click "Apply" in the bottom right of the options window
   
  5) In DCS, there are a few buttons you need to remap
-  * CDU WP KEY = L Ctrl + L Shift + W
-  * CDU LSK L3 = L Ctrl + L Shift + 3
-  * CDU LSK L5 = L Ctrl + L Shift + 5
-  * CDU LSK L7 = L Ctrl + L Shift + 7
-  * CDU LSK L9 = L Ctrl + L Shift + 9
-  * CDU LSK R3 = L Ctrl + L Shift + 4 
-  * CDU LSK R5 = L Ctrl + L Shift + 6
-  * CDU LSK R7 = L Ctrl + L Shift + 8
-  * CDU LSK R9 = L Ctrl + L Shift + 0
-  * CDU CLR  = L Ctrl + L Shift + \
+ 
+ | Name | Key Mapping |
+| --- | --- |
+| CDU WP KEY | L Ctrl + L Shift + W |
+| CDU LSK L3 | L Ctrl + L Shift + 3 |
+| CDU LSK L5 | L Ctrl + L Shift + 5 |
+| CDU LSK L7 | L Ctrl + L Shift + 7 |
+| CDU LSK L9 | L Ctrl + L Shift + 9 |
+| CDU LSK R3 | L Ctrl + L Shift + 4 |
+| CDU LSK R5 | L Ctrl + L Shift + 6 |
+| CDU LSK R7 | L Ctrl + L Shift + 8 |
+| CDU LSK R9 | L Ctrl + L Shift + 0 |
+| CDU CLR  | L Ctrl + L Shift + \ |
  
   
 ## Notes
