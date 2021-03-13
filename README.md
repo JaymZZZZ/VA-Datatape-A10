@@ -72,6 +72,8 @@ There are 4 total voice commands:
 | CDU LSK R7 | L Ctrl + L Shift + 8 |
 | CDU LSK R9 | L Ctrl + L Shift + 0 |
 | CDU CLR  | L Ctrl + L Shift + \ |
+| CDU SPC  | L Ctrl + L Shift + Space |
+| CDU -  | L Ctrl + L Shift + - |
  
   
 ## Notes
