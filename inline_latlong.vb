@@ -144,13 +144,24 @@ Public Class VAInline
 						Dim altitude as string = ConvertMetersToFeet(xml_waypoint.position.altitude)
 						
 						Dim wpt_name as string = trim(Regex.Replace(xml_waypoint.name, "\t\n\r", ""))
+						
 						wpt_name = wpt_name.toUpper()
 						
-						wpt_name = Regex.replace(wpt_name, "\\s?\[(.*)\]", "_")
-						wpt_name = wpt_name.Replace(vbLf, "_")
-						wpt_name = wpt_name.Replace(vbCr, "_")
-						wpt_name = wpt_name.Replace(vbTab, "_")
+						wpt_name = wpt_name.Replace(vbLf, "-")
+						wpt_name = wpt_name.Replace(vbCr, "-")
+						wpt_name = wpt_name.Replace(vbTab, "-")
+						
+						Dim wpt_data As String() = wpt_name.Split(New Char() {"-"c})
+
+						If wpt_data.length = 2 Then
+							wpt_name = wpt_data(1)
+						else
+							wpt_name = "NONE"
+						End If
+						
+						wpt_name = Regex.replace(wpt_name, "\s?\[(.*)\]", "_")
 						wpt_name = wpt_name.replace("/", "_")
+						
 						If wpt_name.length > 11 then
 							wpt_name = wpt_name.Substring(0, 11)
 						End If
@@ -160,7 +171,7 @@ Public Class VAInline
 						VA.SetText("waypoint_"+waypoint, waypoint)
 						VA.SetText("latitude_"+waypoint, latitude)
 						VA.SetText("longitude_"+waypoint, longitude)
-						'VA.SetText("altitude_"+waypoint, altitude)
+						VA.SetText("altitude_"+waypoint, altitude)
 						VA.SetText("wpt_name_"+waypoint, wpt_name)
 				End if
 				stpt = stpt + 1
