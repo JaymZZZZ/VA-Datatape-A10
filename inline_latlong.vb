@@ -130,8 +130,7 @@ Public Class VAInline
 			Dim sSerialize As Serializer = New Serializer()
 			
 			Dim objects As Objects = sSerialize.Deserialize(Of Objects)(xml)
-			
-			
+		
 			
 			For Each xml_waypoint As Waypoint In objects.Waypoints
 				If stpt > 1 then	
@@ -144,20 +143,13 @@ Public Class VAInline
 						Dim waypoint as string = stpt
 						Dim altitude as string = ConvertMetersToFeet(xml_waypoint.position.altitude)
 						
-						Dim wpt_name as string
-						Dim name_string as string = xml_waypoint.name
-						Dim wpt_data As String() = name_string.Split(New Char() {"-"c})
-						
-						If wpt_data.length = 2 Then
-							wpt_name = wpt_data(1)
-						else
-							wpt_name = "NONE"
-						End If
-						
-						wpt_name = trim(wpt_name)
+						Dim wpt_name as string = trim(Regex.Replace(xml_waypoint.name, "\t\n\r", ""))
 						wpt_name = wpt_name.toUpper()
 						
-						wpt_name = Regex.replace(wpt_name, "\s?\[(.*)\]", "_")
+						wpt_name = Regex.replace(wpt_name, "\\s?\[(.*)\]", "_")
+						wpt_name = wpt_name.Replace(vbLf, "_")
+						wpt_name = wpt_name.Replace(vbCr, "_")
+						wpt_name = wpt_name.Replace(vbTab, "_")
 						wpt_name = wpt_name.replace("/", "_")
 						If wpt_name.length > 11 then
 							wpt_name = wpt_name.Substring(0, 11)
