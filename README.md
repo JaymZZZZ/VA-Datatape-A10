@@ -1,15 +1,15 @@
 # VA-Datatape for DCS A-10 Warthog
 Voice Attack Datatape for the DCS A-10 Warthog
 
-## New Features in 0.0.2 (LatLong)
+## New Features in 0.0.3 (LatLong)
 1) All features supported by MGRS
-2) Support for CombatFlite JSON exports
+2) Support for CombatFlite XML exports
 3) Multi file support - You can create and call up to 13 different files with semi-custom names in the format
-`a10_datatape_<alpha|bravo|charlie|delta|echo|foxtrot|golf|hotel|india|juliet|kilo|lima|mike>_<ANYTHING_YOU_WANT>.json`
+`a10_datatape_<alpha|bravo|charlie|delta|echo|foxtrot|golf|hotel|india|juliet|kilo|lima|mike>_<ANYTHING_YOU_WANT>.xml`
   * Examples
-    * a10_datatape_alpha_pattern_practice.json
-    * a10_datatape_bravo_bombing_run.json
-    * a10_datatape_charlie_ILS_practice.json
+    * a10_datatape_alpha_pattern_practice.xml
+    * a10_datatape_bravo_bombing_run.xml
+    * a10_datatape_charlie_ILS_practice.xml
 
 ## New Features in 0.0.2 (MGRS)
 1) Support for CombatFlite JSON exports
@@ -35,13 +35,13 @@ All you need to do to use it is:
     * a10_datatape_alpha_pattern_practice.txt
     * a10_datatape_bravo_bombing_run.txt
 
-3) IF YOU USE COMBATFLITE (LatLong Edition) - Export a JSON file from Combat flight and move/rename it to one of the names below
-  * C:\Users\YOUR_USER\Saved Games\DCS.Openbeta\Datatape\a10_datatape.json
-  * C:\Users\YOUR_USER\Saved Games\DCS\Datatape\a10_datatape.json
-  * C:\Program Files (x86)\VoiceAttack\Datatape\a10_datatape.json
+3) IF YOU USE COMBATFLITE (LatLong Edition) - Export a XML file from Combat flight and move/rename it to one of the names below
+  * C:\Users\YOUR_USER\Saved Games\DCS.Openbeta\Datatape\a10_datatape.xml
+  * C:\Users\YOUR_USER\Saved Games\DCS\Datatape\a10_datatape.xml
+  * C:\Program Files (x86)\VoiceAttack\Datatape\a10_datatape.xml
   * Other Examples
-    * a10_datatape_alpha_pattern_practice.json
-    * a10_datatape_bravo_bombing_run.json
+    * a10_datatape_alpha_pattern_practice.xml
+    * a10_datatape_bravo_bombing_run.xml
 
 4) If you are already using an existing profile. Configure your existing profile to include the DataTape profile by:
  * Click "Edit Profile" (Alt + E) on your existing profile
